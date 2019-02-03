@@ -1,0 +1,100 @@
+// head {
+@__nodeId__: ~"std_auth__login";
+// }
+
+body {
+    background-color: #735555;
+    transition: background-color 20s;
+}
+
+.@{__nodeId__} {
+
+    .errors_wrapper {
+        position: relative;
+        margin: 8vh auto;
+
+        .errors_container {
+            position: absolute;
+            width: 100%;
+            margin-left: -1vh;
+            background-color: rgba(255, 51, 51, 0.5);
+            border: 1vh solid #000;
+            border-radius: 1vh;
+
+            .errors {
+                padding: 3vh;
+
+                .error {
+                    font-size: 3vh;
+                    margin: 2px 0;
+                    color: #E9DA15;
+                }
+            }
+        }
+    }
+
+    .form {
+        margin-top: 22vh;
+
+        input {
+            padding: 5vh;
+            font-size: 5vh;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: #FFFFFF;
+            border-radius: 3vh;
+            max-width: 60vw;
+
+        }
+
+        .pass_input {
+            margin-top: 3vh;
+        }
+
+        .remember_check_box {
+            cursor: pointer;
+            margin: 6px 0 0px 77px;
+
+            .check_box {
+                float: left;
+                margin: 0 8px 0 0;
+            }
+
+            .caption {
+                float: left;
+            }
+
+        }
+
+        .submit_button {
+            position: relative;
+            cursor: pointer;
+            margin-top: 4vh;
+            font-size: 5vh;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 1vh;
+            padding: 2.5vh 7vh;
+            color: rgba(255, 255, 255, 0.5);
+
+            &.hover {
+                background: rgba(0, 0, 0, 0.4);
+                color: rgba(255, 255, 255, 0.6);
+            }
+
+            &:active {
+                left: .3vh;
+                top: .3vh;
+            }
+        }
+    }
+
+    .restore_access_button {
+        cursor: pointer;
+        margin: 10px;
+        color: #C3C3C3;
+
+        &.hover {
+            color: #D5DFFF;
+            text-decoration: underline;
+        }
+    }
+}
